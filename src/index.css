@@ -1,0 +1,78 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;          
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Anybody", serif;
+}
+
+ul, li {
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+input, input::placeholder {
+  font-family: "Anybody", serif;
+  border: none;
+  outline: none;
+  color: var(--primary-text-color);
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+button {
+  font-family: "Anybody", serif;
+  display: inline-block;
+  padding: 0;
+  border: 1px solid #212121;
+  background-color: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
