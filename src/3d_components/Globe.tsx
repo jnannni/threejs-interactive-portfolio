@@ -6,13 +6,13 @@ import React, { useRef } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
-const Globe = (props) => {
+const Globe = ({hovered = false, ...props}) => {
   const group = useRef<THREE.Group>(null)
-  const { nodes, materials, animations } = useGLTF('/models/globe.glb')
+  const { nodes, materials } = useGLTF('/models/globe.glb')
 //   const { actions } = useAnimations(animations, group)
 
-  useFrame(() => {
-    if (group.current) {
+  useFrame(() => {    
+    if (group.current && !hovered) {
       group.current.rotation.z -= 0.005
     }    
   })
