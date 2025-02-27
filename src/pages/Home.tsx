@@ -1,5 +1,6 @@
-import GreetingScene from '../components/GreetingScene/GreetingScene';
-import Navbar from '../components/Navbar/Navbar';
+import GreetingScene from '@components/GreetingScene/GreetingScene';
+import Navbar from '@components/Navbar/Navbar';
+import About from '@components/About/About';
 import './style.css';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className='container home'>
         <Navbar />
         <GreetingScene />
+        <About />
     </div>
   )
 }
