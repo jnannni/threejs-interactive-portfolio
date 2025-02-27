@@ -1,0 +1,9 @@
+.language-bar, .tech-bar {
+    height: 0.5rem;
+    background-color: azure;
+}
+
+.level {
+    background-color: brown;
+    height: 0.5rem;
+}

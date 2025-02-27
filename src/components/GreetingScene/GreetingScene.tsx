@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber';
 import './style.css';
-import { PerspectiveCamera, Stars, Sparkles, OrbitControls } from '@react-three/drei';
+import { PerspectiveCamera, Stars, Sparkles, OrbitControls, Scroll } from '@react-three/drei';
 import Globe from '@3d_components/Globe';
 import Sonic from '@3d_components/Sonic';
 import { Suspense, useEffect, useState } from 'react';
@@ -31,7 +31,7 @@ const GreetingScene = () => {
         <div className='scene-container'>
             <div className='greeting'>Hello, I am Katja🖖<br/><span>Or am I?</span></div>
             <div className='scene'>                
-                <Canvas>
+                <Canvas className='canvas'>
                     <Suspense fallback={<CanvasLoader />}> 
                     {/* onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)} */}
                         <group onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)}>
